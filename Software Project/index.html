@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini-Instagram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📸 PostUp!</h1>
+
+<div id="newPost">
+    <h3>Neuen Beitrag erstellen</h3>
+    <input type="text" id="author" placeholder="Dein Name">
+    <textarea id="content" placeholder="Was möchtest du posten?" rows="3"></textarea>
+    <button onclick="createPost()">Posten</button>
+</div>
+
+<div id="posts"></div>
+
+<hr style="margin: 40px 0;">
+
+<div id="miniGame" style="text-align:center; max-width:600px; margin:0 auto;">
+    <h2 style="color: var(--accent-color);">🎮 Mini-Game: Emoji-Klicker</h2>
+    <p>Klicke so oft wie möglich auf das Emoji in 10 Sekunden!</p>
+    <button id="clickButton" onclick="clickEmoji()" disabled style="font-size: 32px; padding: 20px;">🎯</button>
+    <p>Punkte: <span id="gameScore">0</span></p>
+    <button onclick="startGame()" style="background: var(--primary-color);">▶️ Spiel starten</button>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
